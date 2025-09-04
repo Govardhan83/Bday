@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Namya's Birthday Surprise 🎂❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <section id="screen-shooting" class="screen active">
+      <h1>🎯 Shoot the Hearts!</h1>
+      <p>Hit 5 hearts to unlock your surprise...</p>
+      <div id="target-area"></div>
+      <p id="score">Score: 0</p>
+    </section>
+
+    <section id="screen-note" class="screen">
+      <h1>💌 A Note For You</h1>
+      <p id="loveNote">My dearest Namya, (replace this with your real note)...</p>
+      <button onclick="goToChoice()">Continue ➝</button>
+    </section>
+
+    <section id="screen-choice" class="screen">
+      <h1>Choose Your Path</h1>
+      <button onclick="goTo('quiz')">Path 1 ❤️</button>
+      <button onclick="goTo('cake')">Path 2 🎂</button>
+    </section>
+
+    <section id="screen-quiz" class="screen">
+      <h1>💑 Our Love Quiz</h1>
+      <form id="quizForm">
+        <p>Q1: Where did we first meet?<br>
+          <input type="radio" name="q1" value="a"> School<br>
+          <input type="radio" name="q1" value="b"> Coaching<br>
+          <input type="radio" name="q1" value="c"> Mall<br>
+        </p>
+        <p>Q2: My fav color?<br>
+          <input type="radio" name="q2" value="a"> Blue<br>
+          <input type="radio" name="q2" value="b"> Black<br>
+          <input type="radio" name="q2" value="c"> Pink<br>
+        </p>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="screen-maze" class="screen">
+      <h1>🏹 Escape from Namya's Heart</h1>
+      <div id="maze">
+        <div id="player"></div>
+        <div class="wall" style="top:50px; left:100px;"></div>
+        <div class="wall" style="top:150px; left:200px;"></div>
+      </div>
+      <p>Tries left: <span id="tries">3</span></p>
+    </section>
+
+    <section id="screen-cake" class="screen">
+      <h1>🎂 Find & Place the Candles</h1>
+      <div id="cake-area">
+        <img src="assets/images/cake.png" id="cake" alt="cake">
+        <div id="candles"></div>
+      </div>
+    </section>
+
+    <section id="screen-slides" class="screen">
+      <h1>💖 Our Memories</h1>
+      <div class="slide">Slide 1 (replace with image)</div>
+      <div class="slide">Slide 2</div>
+      <div class="slide">Slide 3</div>
+      <button onclick="goTo('video')">Next ➝</button>
+    </section>
+
+    <section id="screen-video" class="screen">
+      <h1>🎉 Happy Birthday, My Love!</h1>
+      <video controls>
+        <source src="assets/video/final_video.mp4" type="video/mp4">
+        Your browser doesn’t support video.
+      </video>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

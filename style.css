@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  color: white;
+  text-align: center;
+}
+.screen {
+  display: none;
+  padding: 30px;
+  min-height: 100vh;
+}
+.screen.active {
+  display: block;
+}
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #ff4b6e;
+  font-size: 16px;
+  cursor: pointer;
+}
+#target-area {
+  height: 300px;
+  border: 2px dashed white;
+  margin: 20px;
+  position: relative;
+}
+.heart {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: red;
+  clip-path: polygon(50% 0%, 61% 19%, 82% 19%, 100% 38%, 
+                     100% 62%, 50% 100%, 0% 62%, 0% 38%, 
+                     18% 19%, 39% 19%);
+}
+#maze {
+  width: 300px;
+  height: 300px;
+  border: 2px solid white;
+  margin: auto;
+  position: relative;
+}
+#player {
+  width: 30px;
+  height: 30px;
+  background: url("assets/images/your_png.png") no-repeat center/contain;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.wall {
+  width: 50px;
+  height: 10px;
+  background: white;
+  position: absolute;
+}

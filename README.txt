@@ -1,0 +1,1 @@
+Replace assets in assets/ with your real files. Open index.html to test locally.
